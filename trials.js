@@ -82,6 +82,8 @@ function getRange(start, stop) {
   for (let num = start; num < stop; num += 1) {
     nums.push(num);
   }
+
+  return nums;
 }
 
 
@@ -96,8 +98,7 @@ function censorVowels(word) {
   for (const letter of word) {
     if ('aeiou'.includes(letter)) {
       chars.push('*');
-    }
-    chars.push(letter);
+    } else if (chars.push(letter));
   }
 
   return chars.join('');
@@ -188,7 +189,7 @@ function hasBalancedParens(string) {
     }
   }
 
-  return parens < 0;
+  return parens === 0;
 }
 
 
